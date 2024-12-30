@@ -8,8 +8,7 @@ const dbName = process.env.DB_NAME;
 
 const connectDB = async () => {
     try {
-        // await mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@cluster0.by8ox.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`, {
-            await mongoose.connect('mongodb+srv://dbGabo:qwerty1234@cluster0.by8ox.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+            await mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@cluster0.by8ox.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
