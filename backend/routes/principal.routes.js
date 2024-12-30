@@ -34,7 +34,7 @@ const { check, validationResult } = require('express-validator');
 routes.get('/tasks', async (req, res) => {
     try{
         const tasks = await Task.find({});
-        if (!task) {
+        if (!tasks) {
             return res.status(404).send({ message: 'Tareas no encontradas' });
         }
         res.status(200).json(tasks);
